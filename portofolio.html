@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Aufa Tami</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #f6f2ff;
+    --card: #ffffff;
+    --text: #3a2f4d;
+    --primary: #9b7ede;
+    --shadow: rgba(155,126,222,0.25);
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#f6f2ff,#efe7ff);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 4px 12px var(--shadow);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3 {
+    color: var(--primary);
+}
+
+.navbar a {
+    text-decoration: none;
+    background: var(--primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px var(--shadow);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h3>Portfolio Aufa 💜</h3>
+    <a href="biodata4.lilac.html">Kembali ke Profil</a>
+</div>
+
+<div class="container">
+
+    <div class="header">
+        <h1>✨ PORTFOLIO KARYA ✨</h1>
+        <p>Beberapa karya dan proyek yang pernah saya buat</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>🌐 Website Pribadi</h2>
+            <p>Website profil pribadi bertema lilac dengan fitur dark mode dan animasi modern.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <h2>🎨 Desain Digital</h2>
+            <p>Karya seni digital dan desain kreatif yang saya buat menggunakan aplikasi desain.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <h2>💡 Proyek Teknologi</h2>
+            <p>Eksperimen coding dan project sederhana berbasis HTML, CSS, dan JavaScript.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+        <div class="card">
+            <h2>📚 Prestasi & Target</h2>
+            <p>Perjalanan pendidikan menuju MAN IC Padang Pariaman dan cita-cita menjadi pengusaha sukses Dunia & Akhirat.</p>
+            <a href="#">Lihat Detail</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © <span id="year"></span> Portfolio Aufa Tami
+    </div>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
